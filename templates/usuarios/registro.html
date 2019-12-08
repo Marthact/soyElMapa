@@ -1,0 +1,25 @@
+<head>
+    {% load static %}
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="{% static 'css/registro.css' %}">
+</head>
+
+ <div class="tit">
+        <center><h1> Registrar Usuario </h1> </center>
+    </div> 
+<FORM METHOD="POST" action="" enctype="multipart/form-data">
+    <center>
+  <p id="titulo"> Datos a Ingresar</p> 
+        <br>
+    {% csrf_token %}
+    {{ RegistroForm.as_p }}
+    <INPUT id="boton" TYPE="SUBMIT">
+            
+        </INPUT>
+        </center>
+     
+</FORM>
+           {% csrf_token %}
+    <input type="SUBMIT" name="next" value="{{ request.inicio}}">
+    <button type="submit">Regresar</button> 

@@ -1,0 +1,49 @@
+<head>
+{% load static %}
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    
+    <link rel="stylesheet" href="{% static 'css/inicio.css' %}">
+    <link rel="stylesheet" href="{% static 'css/acceso.css' %}">
+ <p id="titulo" text align="center">Bienvenido a Nuestra pagina</p><br>
+</head>
+
+<body>
+    
+    <!-- {% if request.user.is_authenticated %}
+    <div id="salir"><a href="{% url 'Salir' %}"><input id="salir" type="button" value="Salir"></a></div>
+    <center>
+        <div class="bienvenido"><p>Bienvenido, <span id="usuario">{{ request.user.username }}</span></p></div>
+    </center>
+
+
+    {% else %}
+    
+    <center>              
+   <a href="{% url 'acceso' %}"><input id="btn1" type="button" value="acceso"></a>
+    <a href="{% url 'registro' %}"><input id="btn2" type="button" value="registro"></a>
+   </center>
+   
+    {% endif %} -->
+    
+  <!---- <div class="tit">
+        <center><h1>BLOG</h1> </center>
+    </div> -->
+    
+     <center>              
+    <a href="{% url 'registro' %}"><input id="btn2" type="button" value="Registrate"></a>
+   </center>
+    <br>
+    <br>
+<FORM METHOD="POST">
+    
+    <center>    
+        <div class=h2>Iniciar sesion</h2></div>
+    {% csrf_token %}
+    {{ IngresarForm.as_p }}
+    <br>
+
+    <INPUT id="boton" TYPE="SUBMIT"> </INPUT>
+   </center>
+</FORM>
+</body>

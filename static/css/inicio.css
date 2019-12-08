@@ -1,0 +1,75 @@
+body{
+background: url("../img/mars3.png") no-repeat center center fixed;
+background-size: 100%;
+}
+
+#titulo {
+    color: yellow;
+    font-size: 50px;
+    background-color: black;
+    font-family: serif;
+}
+form
+{
+  margin: auto;
+  width: 40%;
+  max-width: 800px;
+  background:rgba(0,0,0,0.7);
+  padding: 40px;
+  border: 1px solid rgb(253, 253, 253);
+
+}
+#btn1
+{
+    background:yellow;
+    color:black;
+    width: 100px;
+    height: 35px;
+    border-color: white;
+}
+#btn2{
+    background:yellow;
+    color:black;
+    width: 100px;
+    height: 35px;
+    border-color: white;
+
+}
+.bienvenido{
+    color: white;
+    font-size: 30px;
+    font-family: serif;
+    background-color: black;
+    width: 40%;
+    background: rgb(0, 0, 0, 0.7);
+    opacity: 0.9;
+    margin-top:200 ;
+}
+
+#publicaciones{
+    color: white;
+    font-size: 40px;
+    font-family: serif;
+    background-color: black;
+    width: 40%;
+    background: rgb(0, 0, 0, 0.7);
+}
+
+#usuario{
+    color: rgb(255, 251, 0);
+}
+
+#salir{
+    float: right;
+    background:yellow;
+    color:black;
+    width: 100px;
+    height: 30px;
+    border-color: white;
+    margin: auto;
+
+}
+
+.llamas{
+    color:#E4DE15;
+}

@@ -1,0 +1,35 @@
+<html>                                   <!-- ENTRANDO  -->
+<head>
+    {% load static %}
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    
+    <link rel="stylesheet" href="{% static 'css/inicio.css' %}">
+
+    
+    <p id="titulo" text align="center">USTED INICIO SESION</p><br>
+</head>
+<body>
+
+    {% if request.user.is_authenticated %}
+    <div id="salir"><a href="{% url 'Salir' %}"><input id="salir" type="button" value="Salir"></a></div>
+    <center>
+        <div class="bienvenido"><p>Bienvenido, <span id="usuario">{{ request.user.username }}</span></p></div>
+    </center>
+
+
+    {% else %}
+    
+<!--    <center><div class="bienvenido"><p text align="center">Aún no has iniciado sesión. <span class="llamas"> <br>Inicia sesión </span> o <span class="llamas">registrate</span>.</div> <br><br></center>  
+
+    
+   <center>              
+   <a href="{% url 'acceso' %}"><input id="btn1" type="button" value="acceso"></a>
+    <a href="{% url 'registro' %}"><input id="btn2" type="button" value="registro"></a>
+   </center>
+   -->
+    {% endif %}
+    
+    
+ </body>
+</html>
