@@ -5,22 +5,20 @@
     <link rel="stylesheet" href="{% static 'css/registro.css' %}">
 </head>
 
- <div class="tit">
-        <center><h1> Registrar Usuario </h1> </center>
+ <div class="tit"><a href="{% url 'acceso' %}">Regresar</a><br>
     </div> 
 <FORM METHOD="POST" action="" enctype="multipart/form-data">
     <center>
-  <p id="titulo"> Datos a Ingresar</p> 
+  <p id="titulo"> Regístrate</p> 
         <br>
     {% csrf_token %}
     {{ RegistroForm.as_p }}
-    <INPUT id="boton" TYPE="SUBMIT">
+        <br>
+    <INPUT id="boton" TYPE="SUBMIT" value="Aceptar">
             
         </INPUT>
         </center>
      
 </FORM>
-           {% csrf_token %}
-    <input type="SUBMIT" name="next" value="{{ request.inicio}}">
-    <button type="submit">Regresar</button> 
-{{ IngresarForm.as_p }}
+    
+    

@@ -6,15 +6,64 @@
     
     <link rel="stylesheet" href="{% static 'css/inicio.css' %}">
 
-    
-    <p id="titulo" text align="center">USTED INICIO SESION</p><br>
+     {% if request.user.is_authenticated %}
+    <p id="titulo" text align="center">Bienvenido, <span id="usuario">{{ request.user.username }}</span>
+    <a href="{% url 'Salir' %}" id="cierre">Cerrar Sesión</a></p><br>
+     <style>
+         #map {
+        height: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
 </head>
+    <div id="map"></div>
+    <script>
+      var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: 32.6519, lng: -115.4683},
+          zoom: 8
+          
+            
+        });
+          
+       
+          var marker = new google.maps.Marker({position: {lat: 32.6519 , lng:-115.4683} ,map: map})
+          var triangleCoords = [
+          {lat:  32.6519, lng: -115.4683}, // Brasil
+          {lat: -14.235004, lng: -51.92527999999999},// Argentina
+          {lat: -33.4488897, lng: -70.6692655} // Chile
+        ];
+       
+        // Construyendo el póligono
+        var poligono = new google.maps.Polygon({
+          paths: triangleCoords,
+          strokeColor: 'red',
+          strokeOpacity: 0.8,
+          strokeWeight: 2,
+          fillColor: 'red',
+          fillOpacity: 0.35
+        });
+        poligono.setMap(map);
+       
+       
+          
+      }
+        
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAuNbv-ASTLjjuledW0xiIqrUjrxu-erX8&callback=initMap"
+    async defer></script>
 <body>
 
-    {% if request.user.is_authenticated %}
-    <div id="salir"><a href="{% url 'Salir' %}"><input id="salir" type="button" value="Salir"></a></div>
+   
+   
     <center>
-        <div class="bienvenido"><p>Bienvenido, <span id="usuario">{{ request.user.username }}</span></p></div>
+        <div class="bienvenido"><p></p></div>
     </center>
 
 

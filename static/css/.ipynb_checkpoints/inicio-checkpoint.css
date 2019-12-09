@@ -1,13 +1,20 @@
 body{
-background: url("../img/mars3.png") no-repeat center center fixed;
+background: url("../img/azul.png") no-repeat center center fixed;
 background-size: 100%;
 }
 
 #titulo {
     color: yellow;
-    font-size: 50px;
+    font-size: 40px;
     background-color: black;
     font-family: serif;
+    opacity: 0.9;
+}
+
+#cierre{
+    margin-left:53%;
+    font-size: 30px
+    
 }
 form
 {
@@ -16,7 +23,6 @@ form
   max-width: 800px;
   background:rgba(0,0,0,0.7);
   padding: 40px;
-  border: 1px solid rgb(253, 253, 253);
 
 }
 #btn1
@@ -60,8 +66,7 @@ form
 }
 
 #salir{
-    float: right;
-    background:yellow;
+   
     color:black;
     width: 100px;
     height: 30px;

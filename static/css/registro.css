@@ -1,17 +1,21 @@
 body{
-background: url("../img/mars2.jpg") no-repeat center center fixed;
+background: url("../img/color.jpg") no-repeat center center fixed;
 background-size: 100%;
 }
-#enc{
-    font-size: xx-large;
-}
+
 .lab{
     color:darkblue;
     font-family: cursive;
+
+}
+#back{
+    float:left;
+    
+}
     
 }
 .h1{
-    color: white;
+    color: black;
     text-align: center;
     margin-bottom: 20px;
 }
@@ -24,7 +28,6 @@ background-size: 100%;
 #btn{
     color:#fff;
     background-color:#343a40;
-    border-color:#343a40;
     width:150px;
     height:40px;
     font-family: 'Courier New', Courier, monospace;
@@ -35,7 +38,7 @@ background-size: 100%;
     }
 
 #titulo{
-    color: lightgray;
+    color: white;
     font-size: 23px;
     background-color: black;
     font-family: serif;
@@ -44,31 +47,31 @@ background-size: 100%;
 }
 .tit
 {
+   color: white;
+    font-size: 30px;
     background-color: black;
-    color: lime;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    height: 50px;
+    font-family: serif;
+    opacity: 0.9;
+    margin-top:-15px;
 }
 
 form
 {
-  margin: 50;
-  width: 25%;
+  margin: auto;
+  width: 40%;
   max-width: 500px;
   background: #000;
   margin-top: 50px;
-
+opacity: 0.9;
 font-family: Georgia, 'Times New Roman', Times, serif;
 
 
-  color:green;
+  color:black;
   padding: 40px;
-  border: 1px solid rgba(5, 238, 24, 0.8);
  
-
 }
 #boton{
-    background-color: lime;
+  
     border-color: white;
-    color: white;
+    color: black;
 }

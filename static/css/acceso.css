@@ -1,13 +1,14 @@
 body{
-background: url("../img/mars3.png") no-repeat center center fixed;
+background: url("../img/colo2.jpg") no-repeat center center fixed;
 background-size: 100%;
 }
 
 #titulo {
-    color: yellow;
+    color: white;
     font-size: 50px;
     background-color: black;
     font-family: serif;
+    opacity: 0.9;
 }
 form
 {
@@ -16,23 +17,21 @@ form
   max-width: 800px;
   background:rgba(0,0,0,0.7);
   padding: 40px;
-  border: 1px solid rgb(253, 253, 253);
 
 }
 #btn1
 {
-    background:yellow;
+    background:white;
     color:black;
     width: 100px;
     height: 35px;
-    border-color: white;
+
 }
 #btn2{
-    background:yellow;
+    background:white;
     color:black;
-    width: 100px;
-    height: 35px;
-    border-color: white;
+
+    
 
 }
 .bienvenido{
@@ -50,7 +49,6 @@ form
     color: white;
     font-size: 40px;
     font-family: serif;
-    background-color: black;
     width: 40%;
     background: rgb(0, 0, 0, 0.7);
 }
@@ -65,7 +63,6 @@ form
     color:black;
     width: 100px;
     height: 30px;
-    border-color: white;
     margin: auto;
 
 }
@@ -78,11 +75,15 @@ form
     color: white;
     text-align: center;
     margin-bottom: 20px;
+    margin-left:10%;
+   
+    
 }
 #boton{
-    background-color: lime;
-    border-color: white;
-    color: black;
+    background:white;
+    color:black;
+    
+    
 }
 
 form
@@ -92,13 +93,18 @@ form
   max-width: 500px;
   background: #000;
   margin-top: 50px;
-float: left;
-font-family: Georgia, 'Times New Roman', Times, serif;
+    float: left;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 
 
-  color:green;
+  color:black;
+opacity: 0.9;
   padding: 40px;
-  border: 1px solid rgba(5, 238, 24, 0.8);
+    width: 50%;
+    margin-left:30%;
+    border-color:black;
+    
+ 
  
 
 }

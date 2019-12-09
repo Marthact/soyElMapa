@@ -24,5 +24,6 @@ urlpatterns = [
     path('Salir/',v.salir_view,name="Salir"),
     path('registro/',v.registro_view,name="registro"),
     path('acceso/',v.acceso_view,name="acceso"),
+  
     
 ]

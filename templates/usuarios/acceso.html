@@ -5,7 +5,7 @@
     
     <link rel="stylesheet" href="{% static 'css/inicio.css' %}">
     <link rel="stylesheet" href="{% static 'css/acceso.css' %}">
- <p id="titulo" text align="center">Bienvenido a Nuestra pagina</p><br>
+ <p id="titulo" text align="center">¿Deseas visitarnos?</p><br>
 </head>
 
 <body>
@@ -30,20 +30,18 @@
         <center><h1>BLOG</h1> </center>
     </div> -->
     
-     <center>              
-    <a href="{% url 'registro' %}"><input id="btn2" type="button" value="Registrate"></a>
-   </center>
     <br>
     <br>
 <FORM METHOD="POST">
     
     <center>    
-        <div class=h2>Iniciar sesion</h2></div>
+    <div class=h2>Inicia sesión</h2></div>
     {% csrf_token %}
     {{ IngresarForm.as_p }}
     <br>
 
-    <INPUT id="boton" TYPE="SUBMIT"> </INPUT>
-   </center>
+    <INPUT id="boton" TYPE="SUBMIT" value="Iniciar"> </INPUT>
+    <a href="{% url 'registro' %}"><input id="btn2" type="button" value="Regístrate"></a>
+   
 </FORM>
 </body>
