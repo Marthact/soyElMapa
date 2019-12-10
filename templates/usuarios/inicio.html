@@ -3,24 +3,27 @@
     {% load static %}
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-    
     <link rel="stylesheet" href="{% static 'css/inicio.css' %}">
-
+    
      {% if request.user.is_authenticated %}
     <p id="titulo" text align="center">Bienvenido, <span id="usuario">{{ request.user.username }}</span>
-    <a href="{% url 'Salir' %}" id="cierre">Cerrar Sesión</a></p><br>
-     <style>
-         #map {
-        height: 100%;
+    <a href="{% url 'Salir' %}" id="cierre"><INPUT id="salir" TYPE="SUBMIT" value="Cerrar Sesión"></a></p><br>
+   
+    <style>
+      #map {
+        height: 75%;
+          width:50%;
+          margin-left:30px;
+          border-radius:10px;
+         
       }
-      /* Optional: Makes the sample page fill the window. */
       html, body {
-        height: 100%;
         margin: 0;
         padding: 0;
       }
     </style>
-</head>
+  </head>
+  <body>
     <div id="map"></div>
     <script>
       var map;
@@ -58,17 +61,16 @@
     </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAuNbv-ASTLjjuledW0xiIqrUjrxu-erX8&callback=initMap"
     async defer></script>
-<body>
 
-   
-   
-    <center>
-        <div class="bienvenido"><p></p></div>
-    </center>
 
 
     {% else %}
-    
+    <center>
+        <div class="bienvenido"><p>Necesitas iniciar sesión.<br>
+            Si no tienes una cuenta, ¡Regístrate <a href="{% url 'registro' %}" id="registrate">Aquí!</a><br></p></div>
+        
+    </center>
+      
 <!--    <center><div class="bienvenido"><p text align="center">Aún no has iniciado sesión. <span class="llamas"> <br>Inicia sesión </span> o <span class="llamas">registrate</span>.</div> <br><br></center>  
 
     

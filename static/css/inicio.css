@@ -1,15 +1,17 @@
 body{
-background: url("../img/azul.png") no-repeat center center fixed;
+background: url("../img/color.jpg") no-repeat center center fixed;
 background-size: 100%;
 }
 
+
 #titulo {
-    color: yellow;
+    color: white;
     font-size: 40px;
-    background-color: black;
+    background-color: #112478;
     font-family: serif;
     opacity: 0.9;
 }
+
 
 #cierre{
     margin-left:53%;
@@ -42,13 +44,12 @@ form
 
 }
 .bienvenido{
-    color: white;
+    color: #37352B;
     font-size: 30px;
     font-family: serif;
-    background-color: black;
+    background-color: #E8C917;
     width: 40%;
-    background: rgb(0, 0, 0, 0.7);
-    opacity: 0.9;
+    opacity: 0.8;
     margin-top:200 ;
 }
 
@@ -62,16 +63,20 @@ form
 }
 
 #usuario{
-    color: rgb(255, 251, 0);
+    color: yellow;
 }
 
 #salir{
    
+    font-size:20px;
     color:black;
-    width: 100px;
-    height: 30px;
-    border-color: white;
+    width: 135px;
+    background-color:yellow;
+    height: 35px;
+
+    border-radius:10px;
     margin: auto;
+    margin-left:10%;
 
 }
 
